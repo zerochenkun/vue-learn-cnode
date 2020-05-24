@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang=zh-Hans>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>2.1 文本插值 生命周期</title>
+</head>
+<body>
+<div id="app">
+  {{message}}
+  <br>
+  {{1>2 ? message:a}}
+</div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  console.log(Vue)
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!',
+      a:888
+    },
+
+    // 在实例被创建后被调用，创建完成未挂载
+    // created: function () {
+    //   alert('created')
+    // },
+
+    // 当编译好的HTML被挂载到对应的位置,这个操作完成后触发
+    // mounted: function () {
+    //   alert('mounted')
+    // },
+
+    // 当data中的数据改变,并且虚拟DOM重新渲染完成后触发
+    // updated: function () {
+    //   alert('updated')
+    // }
+  })
+</script>
+</html>
