@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2.3 v-bind bind class and style</title>
+</head>
+<div class="app">
+  <span v-text="message"></span> <br>
+  <a :href="linkUrl">linkUrl</a> <br>
+  <img :src="imgSrc" alt="" style="width:25%"> <br>
+  <input type="button" value="点击我切换背景" :class="changeBgColor">
+</div>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  var app = new Vue({
+    el:'.app',
+    data:{
+      message:'hello',
+      linkUrl:'https://cn.bing.com/',
+      imgSrc:'https://cn.bing.com/th?id=OHR.CheetahCubs_ZH-CN8863575385_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp'
+    }
+  })
+</script>
+</body>
+</html>

@@ -6,12 +6,27 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>2.1 文本插值 生命周期</title>
+  <style>
+    .bgToRed{
+      height:40px;
+      background-color: red;
+    }
+  </style>
 </head>
 <body>
 <div id="app">
   {{message}}
   <br>
   {{1>2 ? message:a}}
+  <br>
+  <span v-text="message"></span>
+  <br>
+  <span v-html="banana"></span>
+  <h3 v-bind:class="className">d</h3>
+  <br>
+  <h3 :class="className">d</h3>
+  <button v-on:click="add1">{{number}}</button>
+  <button @click="add1">{{number}}</button>
 </div>
 </body>
 
@@ -22,9 +37,16 @@
     el: '#app',
     data: {
       message: 'Hello Vue!',
-      a:888
+      a:888,
+      banana:'<span style="color: yellow">banana</span>',
+      className:'bgToRed',
+      number:1
     },
-
+    methods:{
+      add1:function () {
+          return this.number+=1
+      }
+    }
     // 在实例被创建后被调用，创建完成未挂载
     // created: function () {
     //   alert('created')

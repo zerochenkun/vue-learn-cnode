@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d136004-1993-46ae-a7fa-8680db0dcf77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vue-learn.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.2过滤器、指令.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/2.3计算属性.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/2.4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +32,17 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\chenuvi\vue-learn\src" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -48,7 +55,9 @@
       <option name="presentableId" value="Default" />
       <updated>1590322083749</updated>
       <workItem from="1590322087806" duration="2952000" />
-      <workItem from="1590359944897" duration="2018000" />
+      <workItem from="1590359944897" duration="2321000" />
+      <workItem from="1590413412588" duration="2995000" />
+      <workItem from="1590447351957" duration="1226000" />
     </task>
     <servers />
   </component>
@@ -56,6 +65,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="633" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590447473917">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="633" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590447473917" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1590447580506">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590447580506" />
     <state x="1464" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1590322375737">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
