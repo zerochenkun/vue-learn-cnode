@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d136004-1993-46ae-a7fa-8680db0dcf77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/2.3计算属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/2.4.html" afterDir="false" />
+    <list default="true" id="9d136004-1993-46ae-a7fa-8680db0dcf77" name="Default Changelist" comment="feat:2.4 绑定 src与img's href">
+      <change afterPath="$PROJECT_DIR$/src/2.4test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/2.4.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/2.4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,25 +56,61 @@
       <workItem from="1590322087806" duration="2952000" />
       <workItem from="1590359944897" duration="2321000" />
       <workItem from="1590413412588" duration="2995000" />
-      <workItem from="1590447351957" duration="1226000" />
+      <workItem from="1590447351957" duration="1430000" />
+      <workItem from="1590499293510" duration="4348000" />
+      <workItem from="1590585969342" duration="3720000" />
+      <workItem from="1590589946309" duration="982000" />
     </task>
+    <task id="LOCAL-00001" summary="feat:2.4 绑定 src与img's href">
+      <created>1590448700099</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590448700099</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat:2.4 绑定 src与img's href" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:2.4 绑定 src与img's href" />
   </component>
   <component name="WindowStateProjectService">
     <state x="633" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590447473917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590447473917" />
+    <state x="558" y="73" key="CommitChangelistDialog2" timestamp="1590587097521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="558" y="73" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590587097521" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1590447580506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590447580506" />
-    <state x="1464" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1590322375737">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590587092842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1464" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590322375737" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590587092842" />
+    <state x="1464" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1590587102979">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1464" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590587102979" />
   </component>
 </project>
