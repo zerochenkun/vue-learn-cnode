@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>内置指令</title>
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <h3>v-cloak</h3>
+  <p v-cloak>{{msg}}</p><br>
+  only p
+  <p>{{msg}}</p><br>
+  <h3>v-once</h3>
+  <span v-once>{{oncedata}}</span>
+  <br>
+  <div v-if="Math.random() > 0.5">
+    Now you see me
+  </div>
+  <div v-else>
+    Now you don't
+  </div>
+  <br>
+  <div v-if="type==='name'">
+    name <input type="text" placeholder="please input your name">
+  </div>
+  <div v-else key="psd">
+    password <input type="text" placeholder="please input your password">
+  </div>
+  <button @click="toggleType">click me toggle</button>
+  <h3>v-show</h3>
+  <p v-show="true">Message is: {{ message }}</p>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  var myapp = new Vue({
+    el: "#app",
+    data: {
+      msg: "it's time for a bath",
+      oncedata: "need to wash my clothes",
+      type: "name",
+      message: "get up early every day",
+    },
+    methods: {
+      toggleType: function () {
+        this.type = (this.type === 'name' ? 'password' : 'name')
+      }
+    }
+  })
+</script>
+</html>

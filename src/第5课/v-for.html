@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>v-for</title>
+</head>
+<div id="app">
+  <ul>
+    <li v-for="(item,index) in learnMethods" :key="item.message">
+      {{index}} {{ item.myMethods}}
+    </li>
+    <button></button>
+  </ul>
+
+  <ul>
+    <li v-for="(value, name, index) of myObject">
+      index: {{ index }}---- name: {{ name }}---- value:{{ value }}
+    </li>
+  </ul>
+  <ul>
+    myMethods
+    <li v-for="(item,index) in myMethods">{{item}}</li>
+  </ul>
+  <button @click="sortIt">sortIt</button>
+  <button @click="reverseIt">reverseIt</button>
+  <button @click="changeOneItem">changeOneItem</button>
+<ul>
+  <li v-for="n of evenNumbers">{{ n }}</li>
+  <li v-for="n of matchOneChar">{{ n }}</li>
+</ul>
+</div>
+
+<body>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  var app = new Vue({
+    el: "#app",
+    data: {
+      learnMethods: [
+        { myMethods: "看文档" },
+        { myMethods: "自己写-1" },
+        { myMethods: "看视频--2" },
+      ],
+      numbers: [1, 2, 3, 4, 5],
+      myMethods: ["0看文档", "1看视频--2", "2自己写-1"],
+      myObject: {
+        title: 'How to do lists in Vue',
+        author: 'Jane Doe',
+        publishedAt: '2016-04-10'
+      }
+    },
+    methods: {
+      sortIt: function () {
+        this.myMethods.sort(function (a, b) {
+          return a.length - b.length
+        })
+      },
+      reverseIt: function () {
+        this.myMethods.reverse()
+      },
+      changeOneItem: function () {
+        return Vue.set(this.myMethods, 0, "car") && console.log('this: ', this);
+      },
+    },
+    computed: {
+      matchOneChar: function () {
+          return this.myMethods.filter(function(a){
+            console.log('a: ', a);
+            return a.match(/看/)
+          })
+      },
+      evenNumbers: function () {
+        return this.numbers.filter(function (number) {
+          return number % 2 === 0
+        })
+      }
+    }
+  })
+</script>
+
+</html>

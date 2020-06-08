@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d136004-1993-46ae-a7fa-8680db0dcf77" name="Default Changelist" comment="feat:2.4 绑定 src与img's href">
-      <change afterPath="$PROJECT_DIR$/src/2.4test.html" afterDir="false" />
+    <list default="true" id="9d136004-1993-46ae-a7fa-8680db0dcf77" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/2.5内置指令.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson7/props.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson7/自定义事件-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson7/自定义事件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/第5课/methodsAndEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/第5课/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/第5课/v-for.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/2.4.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/2.4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/2.4test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/2.4test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +39,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lesson7" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\chenuvi\vue-learn\src\lesson7" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\chenuvi\vue-learn\src" />
     </key>
@@ -59,7 +69,23 @@
       <workItem from="1590447351957" duration="1430000" />
       <workItem from="1590499293510" duration="4348000" />
       <workItem from="1590585969342" duration="3720000" />
-      <workItem from="1590589946309" duration="982000" />
+      <workItem from="1590589946309" duration="1079000" />
+      <workItem from="1590591687287" duration="663000" />
+      <workItem from="1590670997278" duration="1298000" />
+      <workItem from="1590747052995" duration="704000" />
+      <workItem from="1590807074685" duration="1503000" />
+      <workItem from="1590989143136" duration="4317000" />
+      <workItem from="1591020513535" duration="1788000" />
+      <workItem from="1591022580781" duration="566000" />
+      <workItem from="1591092765877" duration="5532000" />
+      <workItem from="1591135230452" duration="2367000" />
+      <workItem from="1591271577444" duration="824000" />
+      <workItem from="1591273649044" duration="3604000" />
+      <workItem from="1591307629542" duration="4550000" />
+      <workItem from="1591353951272" duration="445000" />
+      <workItem from="1591437406165" duration="624000" />
+      <workItem from="1591540049693" duration="69000" />
+      <workItem from="1591625933335" duration="3367000" />
     </task>
     <task id="LOCAL-00001" summary="feat:2.4 绑定 src与img's href">
       <created>1590448700099</created>
@@ -68,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590448700099</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat:2.4test bind object\array\style">
+      <created>1590591484672</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590591484673</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,28 +122,35 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat:2.4 绑定 src与img's href" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:2.4 绑定 src与img's href" />
+    <MESSAGE value="feat:2.4test bind object\array\style" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:2.4test bind object\array\style" />
   </component>
   <component name="WindowStateProjectService">
     <state x="633" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590447473917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590447473917" />
-    <state x="558" y="73" key="CommitChangelistDialog2" timestamp="1590587097521">
+    <state x="558" y="73" key="CommitChangelistDialog2" timestamp="1590591483865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="73" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590587097521" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1590447580506">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="558" y="73" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590591483865" />
+    <state x="615" y="218" key="SettingsEditor" timestamp="1591271652913">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590447580506" />
+    <state x="615" y="218" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1591271652913" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590587092842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590587092842" />
-    <state x="1464" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1590587102979">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="946" y="305" width="667" height="789" key="find.popup" timestamp="1591100871593">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1464" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590587102979" />
+    <state x="946" y="305" width="667" height="789" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1591100871593" />
+    <state x="1952" y="486" width="896" height="913" key="search.everywhere.popup" timestamp="1591628348951">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1464" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590996289411" />
+    <state x="1952" y="486" width="896" height="913" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1591628348951" />
   </component>
 </project>

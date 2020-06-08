@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>方法与事件</title>
+  <div id="myApp">
+    <h3>基本方法</h3>
+    <div>
+      <p>count:{{count}}</p>
+      <button @click="handle()">点我每次 +　１</button>
+      <button @click="handle(8)">点我每次 +　8</button>
+    </div>
+    <hr>
+    <h3>stop: 用法</h3>
+    <div @click="clickDiv()" style="background-color: green;width:5em;height:5em;">
+      <button v-on:click="clickButton()">click</button>
+    </div>
+    <hr>
+    <h3>prevent: 用法</h3>
+    <div>
+      <form action="" @submit.prevent="submitForm">
+        <button type="submit">提交表单</button>
+      </form>
+    </div>
+    <hr>
+    <h3>监听事件</h3>
+    <div>
+      <input type="text" @keyup.13="alertSomething" placeholder="enter">
+      <input type="text" @keyup.delete="alertDelete" placeholder="delete">
+    </div>
+  </div>
+
+</head>
+<body>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  var myApp = new Vue({
+    el: "#myApp",
+    data: {
+      count: 0,
+    },
+    methods: {
+      handle: function (count) {
+        count = count || 1
+        this.count += count
+        console.log("count was clicked")
+      },
+      clickDiv: function () {
+        alert("div was clicked")
+        console.log(this)
+      },
+      clickButton: function () {
+        alert("button was clicked")
+      },
+      submitForm:function () {
+        console.log('no reload,no refresh')
+      },
+      alertSomething:function () {
+        alert("enter")
+      },
+      alertDelete:function () {
+        alert("delete")
+      }
+    }
+  })
+</script>
+</html>

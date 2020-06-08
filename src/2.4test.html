@@ -13,24 +13,20 @@
 
 <body>
 
-  <!--object-->
-  <!--  <div id="container">-->
-  <!--    <p class="weight" :class="{name:isName,age:isAge}">{{name}}</p>-->
-  <!--    <i :class="addClass">{{name}}真好看</i>-->
-  <!--  </div>-->
+  <!-- object -->
+   <div id="container">
+     <p class="weight" :class="{name:isName,age:isAge}">{{name}}</p>
+     <i :class="addClass">{{name}}真好看</i>
+  </div>
 
 
   <!--array-->
-  <!--  <div id="containerArr">-->
-  <!--    {{name}}-->
-  <!--    &lt;!&ndash; 仅仅数组 &ndash;&gt;-->
-  <!--    <div :class="[ha,hei]">{{name}}</div>-->
-  <!--    &lt;!&ndash; 三元表达式 &ndash;&gt;-->
-  <!--    <div :class="[!isAge?ha:hei,cry]">{{name}},还行吧！</div>-->
-  <!--    &lt;!&ndash; 该模式下类名huijia一直存在，还有一个类名根据isAge的真假来判断去留 &ndash;&gt;-->
-  <!--    <div :class="arrMethod">{{name}},有点不好看</div>-->
-  <!--    &lt;!&ndash; 计算属性huijia一直存在，其他的根据情况 &ndash;&gt;-->
-  <!--  </div>-->
+    <div id="containerArr">
+      {{name}}
+      <div :class="[ha,hei]">{{name}}</div>
+      <div :class="[!isAge?ha:hei,cry]">{{name}},还行吧！</div>
+      <div :class="arrMethod">{{name}},有点不好看</div>
+    </div>
 
   <!--style-->
   <div id="containerStyle" :style="{color:color,fontSize:fontSize}">
@@ -44,42 +40,42 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
   // 对象语法
-  // var container = new Vue({
-  //   el:'#container',
-  //   data:{
-  //     isName:true,
-  //     isAge:false,
-  //     name:'teacher Zhang'
-  //   },
-  //   computed:{
-  //     addClass:function () {
-  //       return {
-  //         active:this.isName&&!this.isAge
-  //       }
-  //     }
-  //   }
-  // })
+  var container = new Vue({
+    el:'#container',
+    data:{
+      isName:true,
+      isAge:false,
+      name:'teacher Zhang'
+    },
+    computed:{
+      addClass:function () {
+        return {
+          active:this.isName&&!this.isAge
+        }
+      }
+    }
+  })
 
   // 数组语法
-  // var containerArr = new Vue({
-  //   el:'#containerArr',
-  //   data:{
-  //     judge1:false,
-  //     isAge:true,
-  //     name:"功夫熊猫",
-  //     ha:"haha",
-  //     hei:"heihei",
-  //     cry:"crying"
-  //   },
-  //   computed:{
-  //     arrMethod:function(){
-  //       return [this.cry,{
-  //         ha:this.judge1|this.isAge,
-  //         hei:this.isAge
-  //       }]
-  //     }
-  //   }
-  // })
+  var containerArr = new Vue({
+    el:'#containerArr',
+    data:{
+      judge1:false,
+      isAge:true,
+      name:"功夫熊猫",
+      ha:"haha",
+      hei:"heihei",
+      cry:"crying"
+    },
+    computed:{
+      arrMethod:function(){
+        return [this.cry,{
+          ha:this.judge1|this.isAge,
+          hei:this.isAge
+        }]
+      }
+    }
+  })
 
   // 绑定style
   var containerStyle = new Vue({

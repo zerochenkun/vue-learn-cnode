@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>props</title>
+</head>
+<body>
+<div id="app" style="border:1px solid red;width:100vw;height:80vh;text-align:center">
+  我是父组件
+  <first-child msg="i am from father  component"></first-child>
+  <h4>使用v-bind进行数据动态绑定</h4>
+  <input type="text" v-model="parentmsg">
+  <bind-child v-bind:xxx="parentmsg"></bind-child>
+  <h4>---------</h4>
+  <input type="text" v-model="width" placeholder="width">
+  <width-component :width="width"></width-component>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  var app = new Vue({
+    el: "#app",
+    data: {
+      parentmsg: "this is a good start",
+      width:'1'
+    },
+    components: {
+      'first-child': {
+        template: '<div style="border:1px solid green;width:80vw;height:20vh;text-align:left;margin-left:auto;margin-right: auto">{{msg}}</div>',
+        props: ['msg']
+      },
+      'bind-child': {
+        template: '<div style="border:1px solid blue;width:80vw;height:20vh;text-align:left;margin-left:auto;margin-right: auto">{{xxx}}</div>',
+        props: ['xxx']
+      },
+      'width-component': {
+        template: '<div :style="style"></div>',
+        props: ['width'],
+        computed: {
+          style: function () {
+            return {
+              width:this.width+'vw',
+              background: 'yellow',
+              height: '10vh'
+            }
+          }
+        }
+      }
+    }
+  })
+</script>
+</html>
