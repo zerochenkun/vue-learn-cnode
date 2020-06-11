@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<div id="app" style="border:1px solid green">
+  <a-component ref="a"></a-component>
+  <b-component ref="b"></b-component>
+  <child-component ref="child"></child-component>  ----msg:{{msg}}
+  <h3>父组件拿子组件内容</h3>
+  <button @click="getChildData">click to getChildData</button>
+  ---from child: {{fromChild}}
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  Vue.component('a-component', {
+    template: `<div>
+                  <button @click="handle">点击我向b组件传递数据</button>
+              </div>`,
+    data: function () {
+      return {
+        a: '我是来自组件a的内容',
+        msg:'i am a\'s message'
+      }
+    },
+    methods: {
+      handle: function () {
+        this.$root.bus.$emit('lala',this.a)
+      }
+    }
+  })
+  Vue.component('b-component', {
+    template: `<div>
+              </div>`,
+    data: function () {
+      return {
+        msg:'i am b\'s message'
+      }
+    },
+    created: function () {
+      this.$root.bus.$on('lala',function (value) {
+        alert(value)
+      })
+    }
+  })
+  Vue.component('child-component', {
+    template: `<div>
+                  <button @click="setFatherData">通过点击我修改父组件数据</button>
+              </div>`,
+    data: function () {
+      return {
+        msg:'i am child\'s message'
+      }
+    },
+    methods:{
+      setFatherData:function () {
+        this.$parent.msg = 'data has been modified'
+      }
+    }
+  })
+  var app = new Vue({
+    el: '#app',
+    data: {
+      bus: new Vue(),
+      msg:'data doesn\'t been modified',
+      fromChild:'hasn\'t get msg'
+    },
+    methods:{
+      getChildData:function () {
+        this.fromChild = this.$refs.a.msg
+      }
+    }
+  })
+</script>
+</html>

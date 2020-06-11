@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<div id="app" style="border:1px solid green">
+  <my-component>
+    <!--    <p>i am father component's content</p>-->
+  </my-component>
+  <h3>具名slot</h3>
+  <name-component>
+    <h4 slot="header">i am tittle 4</h4>
+    <p>i am p1</p>
+    <p>i am p2</p>
+    <footter slot="footer">i am footer</footter>
+  </name-component>
+  <h3>作用域slot</h3>
+  <scope-component>
+    <p slot="kfc" slot-scope="prop">
+      {{prop.text}}
+      {{prop.xxx}}
+    </p>
+  </scope-component>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+  Vue.component('my-component', {
+    template: `<div>
+                  <slot><p>如果父无内容，出现</p></slot>
+              </div>`,
+  })
+  Vue.component('name-component', {
+    template: `<div>
+                  <slot><p>如果父无内容，出现</p></slot>
+              </div>`,
+  })
+  Vue.component('scope-component', {
+    template: `<div>
+              <slot text="i am the text from child-component" xxx="ksdhfks" name="kfc"></slot>
+              </div>`,
+  })
+  var app = new Vue({
+    el: '#app',
+    data: {}
+  })
+</script>
+</html>
